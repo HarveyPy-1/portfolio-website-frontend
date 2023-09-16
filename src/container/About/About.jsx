@@ -5,12 +5,12 @@ import { images } from "../../constants";
 
 const abouts = [
 	{
-		title: "FrontEnd Web Developer",
+		title: "FrontEnd Development",
 		description: "I am a good web developer",
 		imgUrl: images.about01,
 	},
 	{
-		title: "BackEnd Web Developer",
+		title: "BackEnd Development",
 		description: "I am a good web developer",
 		imgUrl: images.about02,
 	},
@@ -32,7 +32,7 @@ const About = () => {
 			<h2 className="head-text">
 				I Know That{" "}
 				<span>
-					Good Design <br /> means
+					Good Apps <br /> means
 				</span>{" "}
 				<span>Good Business</span>
 			</h2>
