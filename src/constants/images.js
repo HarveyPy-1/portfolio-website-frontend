@@ -34,6 +34,9 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import harvey from "../assets/harvey.png";
+import harvey2 from "../assets/harvey2.png";
+import harvey_logo from "../assets/harvey_logo.png";
 
 export default {
 	email,
@@ -69,4 +72,7 @@ export default {
 	nb,
 	skype,
 	spotify,
+	harvey,
+	harvey2,
+	harvey_logo,
 };

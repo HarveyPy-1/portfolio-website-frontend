@@ -11,7 +11,7 @@ const NavBar = () => {
 		// Class naming is using BEM methodology
 		<nav className="app__navbar">
 			<div className="app__navbar-logo">
-				<img src={images.logo} alt="logo" />
+				<img src={images.harvey_logo} alt="logo" />
 			</div>
 			<ul className="app__navbar-links">
 				{["home", "about", "work", "skills", "contact"].map((item, index) => (
@@ -35,10 +35,8 @@ const NavBar = () => {
 							initial={{ x: 300 }}
 							// whileInView={{ x: [300, 0] }}
 							animate={{ x: 0 }}
-							exit={{ x: 300, transition: {duration: 0.2} }}
-							transition={{ duration: 0.85, ease: "easeOut" }}
-							> 
-						
+							exit={{ x: 300, transition: { duration: 0.2 } }}
+							transition={{ duration: 0.85, ease: "easeOut" }}>
 							<HiX onClick={() => setToggle(false)} />
 
 							<ul>
