@@ -1,8 +1,9 @@
 import "./About.scss";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 import { useEffect, useState } from "react";
 import { urlFor, client } from "../../services/client";
+import { AppWrap } from '../../wrapper'
 
 // const abouts = [
 // 	{
@@ -67,4 +68,4 @@ const About = () => {
 		</>
 	);
 };
-export default About;
+export default AppWrap(About, 'about');
