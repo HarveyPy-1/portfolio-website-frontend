@@ -11,7 +11,9 @@ const NavBar = () => {
 		// Class naming is using BEM methodology
 		<nav className="app__navbar">
 			<div className="app__navbar-logo">
-				<img src={images.harvey_logo} alt="logo" />
+				<a href="/">
+					<img src={images.harvey_logo} alt="logo" />
+				</a>
 			</div>
 			<ul className="app__navbar-links">
 				{["home", "about", "work", "skills", "contact"].map((item, index) => (
