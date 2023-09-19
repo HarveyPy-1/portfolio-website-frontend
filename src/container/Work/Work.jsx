@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -13,6 +12,7 @@ const Work = () => {
 	const [works, setWorks] = useState([]);
 	const [filterWork, setFilterWork] = useState([]);
 
+	// Get data from Sanity.io
 	useEffect(() => {
 		const query = '*[_type == "works"]';
 		client.fetch(query).then((data) => {
