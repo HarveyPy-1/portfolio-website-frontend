@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // import { images } from "../../constants";
 import { useEffect, useState } from "react";
 import { urlFor, client } from "../../services/client";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, SuperWrap } from "../../wrapper";
 
 // const abouts = [
 // 	{
@@ -70,4 +70,4 @@ const About = () => {
 	);
 };
 // eslint-disable-next-line react-refresh/only-export-components
-export default AppWrap(About, "about");
+export default AppWrap(SuperWrap(About, "app__about"), "about", "app__whitebg");

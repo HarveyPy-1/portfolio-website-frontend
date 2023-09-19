@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, SuperWrap } from "../../wrapper";
 import { urlFor, client } from "../../services/client";
 import "./Work.scss";
 
@@ -118,4 +118,4 @@ const Work = () => {
 	);
 };
 // eslint-disable-next-line react-refresh/only-export-components
-export default AppWrap(Work, "work");
+export default AppWrap(SuperWrap(Work, "app__works"), "work", "app__primarybg");
