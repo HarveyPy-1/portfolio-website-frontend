@@ -22,6 +22,7 @@ const Skills = () => {
 			setSkills(data);
 		});
 	}, []);
+    
 	return (
 		<>
 			<h2 className="head-text">Skills & Experience</h2>
