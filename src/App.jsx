@@ -1,6 +1,7 @@
 import "./App.scss";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./container/About/About";
+import Footer from "./container/Footer/Footer";
 import Header from "./container/Header/Header";
 import Skills from "./container/Skills/Skills";
 import Testimonials from "./container/Testimonials/Testimonials";
@@ -16,6 +17,7 @@ function App() {
 				<Work />
 				<Skills />
 				<Testimonials />
+				<Footer />
 			</div>
 		</>
 	);
