@@ -4,6 +4,7 @@ import { Tooltip } from "react-tooltip";
 import { motion } from "framer-motion";
 import { AppWrap, SuperWrap } from "../../wrapper";
 import { urlFor, client } from "../../services/client";
+import { v4 as uuidv4 } from "uuid";
 import "./Skills.scss";
 
 const Skills = () => {
@@ -22,7 +23,7 @@ const Skills = () => {
 			setSkills(data);
 		});
 	}, []);
-    
+
 	return (
 		<>
 			<h2 className="head-text">Skills & Experience</h2>
@@ -33,7 +34,7 @@ const Skills = () => {
 							whileInView={{ opacity: [0, 1] }}
 							transition={{ duration: 0.5 }}
 							className="app__skills-item app__flex"
-							key={skill.name}>
+							key={uuidv4()}>
 							<div
 								className="app__flex"
 								style={{ backgroundColor: skill.bgColor }}>
@@ -45,33 +46,35 @@ const Skills = () => {
 				</motion.div>
 				<motion.div className="app__skills-exp">
 					{experiences.map((experience) => (
-						<motion.div className="app__skills-exp-item" key={experience.year}>
+						<motion.div className="app__skills-exp-item" key={uuidv4()}>
 							<div className="app__skills-exp-year">
 								<p className="bold-text">{experience.year}</p>
 							</div>
-							<motion.div
-								className="app__skills-exp-works"
-								key={experience.year + " key"}>
-								{experience.works.map((work, index) => (
-									<>
+							<motion.div className="app__skills-exp-works" key={uuidv4()}>
+								{experience.works.map((work) => (
+									<div key={uuidv4()}>
 										<motion.div
 											whileInView={{ opacity: [0, 1] }}
 											transition={{ duration: 0.5 }}
 											className="app__skills-exp-work"
 											data-tooltip-id={work.name}
-											key={work.name + index}>
-											<h4 className="bold-text">{work.name}</h4>
-											<p className="p-text">{work.company}</p>
+											key={uuidv4()}>
+											<h4 className="bold-text" key={uuidv4()}>
+												{work.name}
+											</h4>
+											<p className="p-text" key={uuidv4()}>
+												{work.company}
+											</p>
 										</motion.div>
 										<Tooltip
-											key={work.name + " key"}
+											key={uuidv4()}
 											id={work.name}
 											effect="solid"
 											arrowColor="#fff"
 											className="skills-tooltip">
 											{work.desc}
 										</Tooltip>
-									</>
+									</div>
 								))}
 							</motion.div>
 						</motion.div>
