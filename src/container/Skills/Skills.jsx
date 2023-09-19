@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useState, useEffect } from "react";
 import { Tooltip } from "react-tooltip";
 import { motion } from "framer-motion";
@@ -79,4 +80,4 @@ const Skills = () => {
 		</>
 	);
 };
-export default Skills;
+export default AppWrap(Skills, "skills");
