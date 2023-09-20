@@ -41,11 +41,8 @@ const About = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				I Know That{" "}
-				<span>
-					Good Apps <br /> means
-				</span>{" "}
-				<span>Good Business</span>
+				Get To{" "}
+				<span>Know Me</span>
 			</h2>
 
 			<section className="app__profiles">

@@ -60,6 +60,14 @@ const NavBar = () => {
 										</li>
 									)
 								)}
+								<li onClick={() => setToggle(false)}>
+									<a
+										href="https://drive.google.com/file/d/1HilLn51eaHJuRuQB3FtHSkuEJx7-fB7u/view?usp=sharing"
+										target="_blank"
+										rel="noreferrer noopener">
+										RESUME
+									</a>
+								</li>
 							</ul>
 						</motion.div>
 					)}
