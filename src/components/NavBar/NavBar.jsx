@@ -23,6 +23,15 @@ const NavBar = () => {
 						<a href={`#${item}`}>{item}</a>
 					</li>
 				))}
+				<li className="app__flex p-text">
+					<div />
+					<a
+						href="https://drive.google.com/file/d/1HilLn51eaHJuRuQB3FtHSkuEJx7-fB7u/view?usp=sharing"
+						target="_blank"
+						rel="noreferrer noopener">
+						RESUME
+					</a>
+				</li>
 			</ul>
 
 			<div className="app__navbar-menu">

@@ -37,6 +37,7 @@ import spotify from "../assets/spotify.png";
 import harvey from "../assets/harvey.png";
 import harvey2 from "../assets/harvey2.png";
 import harvey_logo from "../assets/harvey_logo.png";
+import logo_new from "../assets/logo_new.png";
 
 export default {
 	email,
@@ -75,4 +76,5 @@ export default {
 	harvey,
 	harvey2,
 	harvey_logo,
+	logo_new,
 };
