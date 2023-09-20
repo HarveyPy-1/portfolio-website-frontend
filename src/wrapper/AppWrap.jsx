@@ -11,7 +11,7 @@ const AppWrap = (Component, idName, className) =>
 				<div className="app__wrapper app__flex">
 					<Component />
 					<div className="copyright">
-						<p className="p-text">{`Copyright ©️ ${year}. Harvey Productions.`}</p>
+						<p className="p-text">{` Copyright ©️ ${year}. Made with ❤️ by Harvey`}</p>
 					</div>
 				</div>
 				<NavigationDots active={idName} />

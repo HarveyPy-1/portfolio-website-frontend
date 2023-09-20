@@ -5,6 +5,8 @@ import { AppWrap, SuperWrap } from "../../wrapper";
 import { client } from "../../services/client";
 import "./Footer.scss";
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
 	const [formData, setFormData] = useState({
 		name: "",
@@ -95,6 +97,9 @@ const Footer = () => {
 					<h3 className="head-text">Thank you for getting in touch!</h3>
 				</div>
 			)}
+			<footer className="footer-text">
+				<p className="p-text">{` Copyright ©️ ${year}. Made with ❤️ by Harvey`}</p>
+			</footer>
 		</>
 	);
 };
