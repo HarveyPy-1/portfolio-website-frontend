@@ -45,6 +45,7 @@ const Skills = () => {
 					))}
 				</motion.div>
 				<motion.div className="app__skills-exp">
+					<p className="p-text">📌 HOVER TO SEE MORE 📌</p>
 					{experiences.map((experience) => (
 						<motion.div className="app__skills-exp-item" key={uuidv4()}>
 							<div className="app__skills-exp-year">

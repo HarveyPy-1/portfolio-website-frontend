@@ -39,21 +39,22 @@ const Work = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				My Creative <span>Portfolio</span> Section{" "}
+				My <span>Portfolio</span> Showcase{" "}
 			</h2>
 			<div className="app__work-filter">
-				{["UI/UX", "Web App", "Mobile App", "ReactJS", "All"].map(
-					(item, index) => (
-						<div
-							key={index}
-							onClick={() => handleWorkFilter(item)}
-							className={`app__work-filter-item app__flex p-text ${
-								activeFilter === item ? "item-active" : ""
-							}`}>
-							{item}
-						</div>
-					)
-				)}
+				{["ReactJS", "Node.js", "EJS", "Flask", "UI/UX", "Sanity.io", "Bootstrap", "All"].map((item, index) => (
+					<div
+						key={index}
+						onClick={() => handleWorkFilter(item)}
+						className={`app__work-filter-item app__flex p-text ${
+							activeFilter === item ? "item-active" : ""
+						}`}>
+						{item}
+					</div>
+				))}
+			</div>
+			<div>
+				<p className="p-text">Some projects are hosted on a free, slow server. Give a moment to load.</p>
 			</div>
 
 			<motion.div
