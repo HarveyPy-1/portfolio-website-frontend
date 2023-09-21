@@ -16,13 +16,15 @@ const NavBar = () => {
 				</a>
 			</div>
 			<ul className="app__navbar-links">
-				{["home", "about", "work", "skills", "contact"].map((item, index) => (
-					// The '#' in the link is to enable the page jump to that section when clicked
-					<li key={`link-${index}`} className="app__flex p-text">
-						<div />
-						<a href={`#${item}`}>{item}</a>
-					</li>
-				))}
+				{["home", "about", "work", "skills", "certificates", "contact"].map(
+					(item, index) => (
+						// The '#' in the link is to enable the page jump to that section when clicked
+						<li key={`link-${index}`} className="app__flex p-text">
+							<div />
+							<a href={`#${item}`}>{item}</a>
+						</li>
+					)
+				)}
 				<li className="app__flex p-text">
 					<div />
 					<a
@@ -51,15 +53,20 @@ const NavBar = () => {
 							<HiX onClick={() => setToggle(false)} />
 
 							<ul>
-								{["home", "about", "work", "skills", "contact"].map(
-									(item, index) => (
-										<li key={index}>
-											<a href={`#${item}`} onClick={() => setToggle(false)}>
-												{item}
-											</a>
-										</li>
-									)
-								)}
+								{[
+									"home",
+									"about",
+									"work",
+									"skills",
+									"certificates",
+									"contact",
+								].map((item, index) => (
+									<li key={index}>
+										<a href={`#${item}`} onClick={() => setToggle(false)}>
+											{item}
+										</a>
+									</li>
+								))}
 								<li onClick={() => setToggle(false)}>
 									<a
 										href="https://drive.google.com/file/d/1HilLn51eaHJuRuQB3FtHSkuEJx7-fB7u/view?usp=sharing"

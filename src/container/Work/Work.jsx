@@ -42,7 +42,16 @@ const Work = () => {
 				My <span>Portfolio</span> Showcase{" "}
 			</h2>
 			<div className="app__work-filter">
-				{["ReactJS", "Node.js", "EJS", "Flask", "UI/UX", "Sanity.io", "Bootstrap", "All"].map((item, index) => (
+				{[
+					"ReactJS",
+					"Node.js",
+					"EJS",
+					"Flask",
+					"UI/UX",
+					"Sanity.io",
+					"Bootstrap",
+					"All",
+				].map((item, index) => (
 					<div
 						key={index}
 						onClick={() => handleWorkFilter(item)}
@@ -54,7 +63,10 @@ const Work = () => {
 				))}
 			</div>
 			<div>
-				<p className="p-text">Some projects are hosted on a free, slow server. Give a moment to load.</p>
+				<p className="p-text">
+					📌 Some projects are hosted on a free, slow server. Give a moment to
+					load. 📌
+				</p>
 			</div>
 
 			<motion.div
