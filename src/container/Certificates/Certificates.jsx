@@ -1,6 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
 import { motion } from "framer-motion";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { AppWrap, SuperWrap } from "../../wrapper";
 import { urlFor, client } from "../../services/client";
