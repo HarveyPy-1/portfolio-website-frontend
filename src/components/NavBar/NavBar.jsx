@@ -1,6 +1,7 @@
 import "./NavBar.scss";
 import { images } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { AiOutlineDownload } from 'react-icons/ai'
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
@@ -31,7 +32,7 @@ const NavBar = () => {
 						href="https://drive.google.com/file/d/1HilLn51eaHJuRuQB3FtHSkuEJx7-fB7u/view?usp=sharing"
 						target="_blank"
 						rel="noreferrer noopener">
-						RESUME
+						RESUME <AiOutlineDownload size="15"/>
 					</a>
 				</li>
 			</ul>
