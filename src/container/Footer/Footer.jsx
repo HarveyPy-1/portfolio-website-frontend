@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-refresh/only-export-components */
 import { useState } from "react";
 import { images } from "../../constants";
@@ -42,7 +43,9 @@ const Footer = () => {
 
 	return (
 		<>
-			<h2 className="head-text">Take A Coffee & Chat With Me</h2>
+			<h2 className="head-text">
+				<span>Let's Work</span>! Contact Me!
+			</h2>
 			<div className="app__footer-cards">
 				<div className="app__footer-card">
 					<img src={images.email} alt="email image" />
@@ -89,12 +92,14 @@ const Footer = () => {
 							onChange={handleChangeInput}></textarea>
 					</div>
 					<button type="button" className="p-text" onClick={handleSubmit}>
-						{loading ? "Sending" : "Send Message"}
+						{loading ? "Sending..." : "Send Message"}
 					</button>
 				</div>
 			) : (
 				<div>
-					<h3 className="head-text">Thank you for getting in touch! I will get back to you shortly!</h3>
+					<h3 className="head-text">
+						Thank you for getting in touch! I will get back to you shortly!
+					</h3>
 				</div>
 			)}
 			<footer className="footer-text">

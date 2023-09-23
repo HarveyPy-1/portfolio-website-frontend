@@ -39,7 +39,6 @@ const Certificates = () => {
 				<>
 					<div className="app__certificate-item app__flex">
 						<img src={urlFor(qualification.imgUrl)} alt="certificate" />
-						
 					</div>
 					<div className="app__certificate-btns app__flex">
 						<div
