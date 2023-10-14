@@ -47,9 +47,10 @@ const Work = () => {
 					"Node.js",
 					"EJS",
 					"Flask",
-					"UI/UX",
-					"Sanity.io",
-					"Bootstrap",
+					"Tailwind CSS",
+					"NextJS 13",
+					"Shopify",
+					"TypeScript",
 					"All",
 				].map((item, index) => (
 					<div
