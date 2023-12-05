@@ -26,6 +26,8 @@ import amazon from "../assets/amazon.png";
 import harvey from "../assets/harvey.png";
 import harvey2 from "../assets/harvey2.png";
 import harvey_logo from "../assets/harvey_logo.png";
+import nextjs from "../assets/nextjs.png";
+import tailwind from "../assets/tailwind.png"
 
 export default {
 	email,
@@ -56,4 +58,6 @@ export default {
 	harvey,
 	harvey2,
 	harvey_logo,
+	nextjs,
+	tailwind,
 };

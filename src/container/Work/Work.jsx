@@ -43,12 +43,12 @@ const Work = () => {
 			</h2>
 			<div className="app__work-filter">
 				{[
-					"ReactJS",
+					"NextJS 14",
 					"Node.js",
 					"EJS",
 					"Flask",
 					"Tailwind CSS",
-					"NextJS 13",
+					"React",
 					"Shopify",
 					"TypeScript",
 					"All",
